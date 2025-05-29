@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
@@ -6,7 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
+	<ItemGroup>
+		<Protobuf Include="Protos/translit.proto" GrpcServices="Server" />
+	</ItemGroup>
+
+	<ItemGroup>
     <PackageReference Include="Grpc.AspNetCore" Version="2.71.0" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.16" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.2" />
@@ -15,5 +19,5 @@
   <ItemGroup>
     <ProjectReference Include="..\Translit.Shared\Translit.Shared.csproj" />
   </ItemGroup>
-
+	
 </Project>

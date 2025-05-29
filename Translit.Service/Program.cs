@@ -1,4 +1,5 @@
 
+using Translit.Service.GrpcServices;
 using Translit.Service.Services;
 using Translit.Shared.Interfaces;
 
@@ -18,6 +19,7 @@ namespace Translit.Service
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddScoped<ITranslitService, TranslitService>();
+            builder.Services.AddGrpc();
 
             var app = builder.Build();
 
@@ -34,6 +36,7 @@ namespace Translit.Service
 
 
             app.MapControllers();
+            app.MapGrpcService<TranslitGrpcService>();
 
             app.Run();
         }
