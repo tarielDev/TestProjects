@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+option csharp_namespace = "Translit.Service.Grpc";
+
+package translit;
+
+service Translit {
+  rpc Transliterate (TranslitRequest) returns (TranslitResponse);
+}
+
+message TranslitRequest {
+  string phrase = 1;
+}
+
+message TranslitResponse {
+  string result = 1;
+}
