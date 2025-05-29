@@ -1,4 +1,7 @@
 
+using Translit.Service.Services;
+using Translit.Shared.Interfaces;
+
 namespace Translit.Service
 {
     public class Program
@@ -13,6 +16,8 @@ namespace Translit.Service
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+
+            builder.Services.AddScoped<ITranslitService, TranslitService>();
 
             var app = builder.Build();
 
