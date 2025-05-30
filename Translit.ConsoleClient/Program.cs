@@ -14,7 +14,7 @@ namespace Translit.ConsoleClient
             using var channel = GrpcChannel.ForAddress("https://localhost:7041");
             var client = new TranslitClient(channel);
 
-            Console.WriteLine("Введите фразу для транслитерации:");
+            Console.WriteLine("Введите фразу для транслитерации (пустая строка = выход):");
             while (true)
             {
                 Console.Write("> ");
