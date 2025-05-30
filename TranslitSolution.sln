@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translit.Service", "Transli
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translit.ConsoleClient", "Translit.ConsoleClient\Translit.ConsoleClient.csproj", "{EEE2394E-DB40-40F3-8860-E79D4BBB24DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Translit.ConsoleDirect", "Translit.ConsoleDirect\Translit.ConsoleDirect.csproj", "{AE85638C-3CE6-4F9C-8D89-F105BD425DDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Translit.ConsoleDirect", "Translit.ConsoleDirect\Translit.ConsoleDirect.csproj", "{AE85638C-3CE6-4F9C-8D89-F105BD425DDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Translit.RestApi", "Translit.RestApi\Translit.RestApi.csproj", "{62E1F078-91D0-4A38-B3B2-77AD242A2AC8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{AE85638C-3CE6-4F9C-8D89-F105BD425DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE85638C-3CE6-4F9C-8D89-F105BD425DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE85638C-3CE6-4F9C-8D89-F105BD425DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62E1F078-91D0-4A38-B3B2-77AD242A2AC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62E1F078-91D0-4A38-B3B2-77AD242A2AC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62E1F078-91D0-4A38-B3B2-77AD242A2AC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62E1F078-91D0-4A38-B3B2-77AD242A2AC8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
