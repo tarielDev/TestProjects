@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Translit";
+}
+
+<h2>Транслитерация</h2>
+
+<form method="post">
+    <label>Введите фразу:</label>
+    <input type="text" name="phrase" style="width:300px" />
+    <button type="submit">Преобразовать</button>
+</form>
+
+@if (ViewBag.Result != null)
+{
+    <p><strong>Результат:</strong> @ViewBag.Result</p>
+}

@@ -15,6 +15,7 @@ namespace Translit.RestApi.Controllers
         }
 
 
+
         // Этот метод можно вызывать из браузера
         [HttpGet("transliterate")]
         public ActionResult<string> Transliterate([FromQuery] string phrase)
